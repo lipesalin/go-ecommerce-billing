@@ -1,0 +1,6 @@
+Project
+    Routes
+        -R: Fiber (github.com/gofiber/fiber/v2)
+        -gRPC:
+        -Graphql
+    HotReload: nodemon globally
