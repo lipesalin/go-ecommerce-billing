@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/lipesalin/go-ecommerce-billing/config"
@@ -15,8 +14,6 @@ func main() {
 	if err != nil {
 		log.Fatalf("[CONFIG] Config file is not loaded properly: %v\n", err)
 	}
-
-	fmt.Println("dsadadasdasd")
 
 	// [START SERVER]
 	api.StartServer(cfg)

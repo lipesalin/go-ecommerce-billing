@@ -14,9 +14,9 @@ type AppConfig struct {
 
 func SetupEnv() (cfg AppConfig, err error) {
 	// [ENV dev mode] - Only loads the .env file if it is in development mode
-	if os.Getenv("APP_ENV") == "dev" {
-		godotenv.Load()
-	}
+	// if os.Getenv("APP_ENV") == "dev" {
+	godotenv.Load()
+	// }
 
 	// [URL] - Recovery URL from application
 	httpUrl := os.Getenv("HTTP_URL")
